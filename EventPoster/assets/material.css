@@ -1,0 +1,206 @@
+@import url(http://db.onlinewebfonts.com/c/183b4e85f4c1bbd340068e833698a4f0?family=National+Black);
+
+
+body {
+ background-size: cover;
+ background-color: #c5bfff;
+} 
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.content {
+ background-size: cover;
+ background-color: #c5bfff;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  transition: transform .5s ease-in-out;
+  font-family: "National Black"; 
+  src: url("assets/183b4e85f4c1bbd340068e833698a4f0.eot");
+}
+
+body{
+  background-color: #c5bfff;
+}
+
+.materialshape{
+  border-radius: 25px;
+  background: #fbeb63;
+  padding: 20px;
+  width: 500px;
+  height: 110px;
+  position: absolute;
+  left:1000px;
+  top: 70px;
+  font-size: 100px;
+  font-family: "National Black"; 
+  src: url("assets/183b4e85f4c1bbd340068e833698a4f0.eot");
+  font-weight: bold;
+  text-align:center;
+}
+.infoshape{
+border-radius: 25px;
+  background: #af72b9;
+  padding: 20px;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  left:900px;
+  top: 270px;
+font-size: 60px;
+  font-family: "National Black"; 
+  src: url("assets/183b4e85f4c1bbd340068e833698a4f0.eot");
+  font-weight: bold;
+  text-align:center;
+}
+
+
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+aside {
+  background-color: #2368E2;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  z-index: 1;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+label {
+  display: inline-block;
+  padding: 7px 10px;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  z-index: 3;
+  position: fixed;
+}
+
+.bar {
+  display: block;
+  background-color: #3ADB7B;
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  margin: 5px auto;
+  transition: background-color .5s ease-in, transform .5s ease-in, width .5s ease-in;
+}
+
+
+
+h1 {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 40px;
+}
+
+.asideList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+  text-align: center;
+  border-top: 2px solid rgba(255, 255, 255, .7);
+}
+
+.asideAnchor {
+  border-bottom: 2px solid rgba(255, 255, 255, .7);
+  padding: 20px 0;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "National Black"; 
+  src: url("assets/183b4e85f4c1bbd340068e833698a4f0.eot");
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  transition: color .3s .15s ease-in;
+}
+
+.asideAnchor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #fff;
+  width: 0;
+  transition: width .3s ease-in;
+  z-index: -1;
+}
+
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .content {
+  transform: translateX(20%);
+}
+
+input[type="checkbox"]:checked ~ label .bar {
+  background-color: #fff;
+}
+
+input[type="checkbox"]:checked ~ label .top {
+  -webkit-transform: translateY(0px) rotateZ(45deg);
+  -moz-transform: translateY(0px) rotateZ(45deg);
+  -ms-transform: translateY(0px) rotateZ(45deg);
+  -o-transform: translateY(0px) rotateZ(45deg);
+  transform: translateY(0px) rotateZ(45deg);
+}
+
+input[type="checkbox"]:checked ~ label .bottom {
+  -webkit-transform: translateY(-15px) rotateZ(-45deg);
+  -moz-transform: translateY(-15px) rotateZ(-45deg);
+  -ms-transform: translateY(-15px) rotateZ(-45deg);
+  -o-transform: translateY(-15px) rotateZ(-45deg);
+  transform: translateY(-15px) rotateZ(-45deg);
+}
+
+input[type="checkbox"]:checked ~ label .middle {
+  width: 0;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.ua {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: #0799d3;
+  font-size: 2em;
+  z-index: 2;
+}
+
